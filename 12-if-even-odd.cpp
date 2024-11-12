@@ -1,4 +1,5 @@
 #include<iostream>
+#include<conio.h>
 using namespace std;
 
 int main(){
@@ -13,4 +14,6 @@ int main(){
 	if(remainder == 1){
 		cout<<"You have entered Odd number";
 	}
+	
+	getch();
 }
