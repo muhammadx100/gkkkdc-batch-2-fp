@@ -8,10 +8,14 @@ int main(){
 	int * ptr;
 	
 	ptr = &x;
-	cout<< *ptr << endl;
 	
-	(*ptr)++;
-	cout<<x;
+	cout<< "Value of x: "<< *ptr <<endl;
+	
+	cout<<"Address of variable x in momory: "<< ptr <<endl;
+
+	(*ptr)++; // increment in x through pointer
+
+	cout<<"Value of x after increment: "<< x;
 	
 	return 0;
 }
