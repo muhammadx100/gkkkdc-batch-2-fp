@@ -1,0 +1,44 @@
+import java.util.Scanner;
+class ABZ{
+  public static void main(String args[]){
+   Scanner in= new Scanner(System.in);
+   System.out.print("enter value of first term: ");
+   int a1=in.nextInt();
+   System.out.print("enter value of Second term: ");
+   int a2=in.nextInt();
+   System.out.print("enter value of third term: ");
+   int a3=in.nextInt();
+   System.out.print("enter value of last term: ");
+   int a_n=in.nextInt();
+   // common difference
+    int D=0;
+   if( (a2-a1) == (a3-a2)){
+    D=a2-a1;
+    System.out.println("The common difference is: "+D);
+  
+   }
+   else{
+    System.out.println("invalid selection: try again");
+   }
+  //nth term
+
+
+  int n_term=(a_n-a1+D)/D;
+  System.out.println("The total number of term is: "+n_term);
+
+
+  // all term
+  int sum=0;
+  int new_value=a1-D;
+  int constant=a3;
+   for(int i=0; i<n_term; i++){
+        new_value+=D;
+System.out.print(new_value+" ");   
+sum+=new_value;
+}
+System.out.println();
+System.out.println(sum);
+
+      
+   }
+} 
